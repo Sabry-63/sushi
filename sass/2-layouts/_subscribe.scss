@@ -2,7 +2,6 @@
     @include bgColor($white, $mainColor);
     position: relative;
     overflow: hidden;
-    z-index: -1;
     &::before,
     &::after {
         content: "";
@@ -10,7 +9,6 @@
         top: -260px;
         height: 500px;
         width: 418px;
-        z-index: 1;
     }
     &::before {
         background: url("../../img/bg/sub-left.svg") no-repeat;
