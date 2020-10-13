@@ -1,0 +1,35 @@
+/* ---------------------
+    Start Delicies
+------------------------ */
+.delicies {
+    @include bgColor($white, $mainColor);
+    @extend %cnt-flex;
+    position: relative;
+    @include media(max, 767px) {
+        text-align: center;
+    }
+    .info {
+        h2 {
+            @extend %title;
+        }
+        p {
+            @extend %desc;
+        }
+        a {
+            @include Btn($white, $mainColor);
+        }
+    }
+    .icons {
+        @extend %icons;
+        img {
+            &:nth-child(3) {
+                bottom: 0;
+                left: 20px;
+                @include ainmate(toBottom, 1.5s, 0.4s);
+            }
+        }
+    }
+}
+/* ---------------------
+    Start Delicies
+------------------------ */

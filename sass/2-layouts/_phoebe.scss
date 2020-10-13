@@ -1,0 +1,22 @@
+.phoebe {
+    background: linear-gradient(rgba(255, 127, 127, 0.4), rgba(255, 127, 127, 0.9)), url("../../img/pepole/Place Your Image Here (Double Click to Edit).png") fixed;
+    background-size: cover;
+    .img {
+        img {
+            width: 200px;
+            border-radius: 50%;
+        }
+    }
+    p {
+        @extend %desc;
+        color: $white;
+        @include media(min, 992px) {
+            width: 50%;
+        }
+    }
+    h2 {
+        font-weight: bold;
+        color: $white;
+        letter-spacing: 2px;
+    }
+}

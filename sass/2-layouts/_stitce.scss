@@ -1,0 +1,36 @@
+/* ---------------------
+    Stitistics Style
+------------------------ */
+.stitistics {
+    position: relative;
+    @include bgColor($mainColor, $white);
+    .title {
+        h2 {
+            @extend %title;
+        }
+        p {
+            @extend %desc;
+            @include media(min, 992px) {
+                width: 50%;
+            }
+        }
+    }
+    .circle {
+        border: 5px solid $white;
+        border-radius: 50%;
+        height: 200px;
+        width: 200px;
+        margin-right: auto;
+        margin-left: auto;
+        margin-top: 30px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .icons {
+        @extend %icons;
+    }
+}
+/* ---------------------
+    End Stitistics Style
+------------------------ */

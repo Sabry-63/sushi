@@ -1,0 +1,59 @@
+/* ---------------------
+    Header Style
+------------------------ */
+header {
+    position: relative;
+    background: $mainColor url("../../img/header/header.png");
+    background-size: cover;
+    min-height: 110vh;
+    @include media(min, 992px) {
+        background-attachment: fixed;
+    }
+    // Navbar Style
+    nav {
+        background-color: rgba($mainColor, 0.8);
+        box-shadow: 2px 0 2px 0 $gray;
+        @include media(max, 767px) {
+            text-align: center;
+        }
+        .navbar-toggler {
+            outline: none;
+        }
+        li {
+            a {
+                color: $white;
+                margin: 0 15px;
+                border-bottom: 1px solid transparent;
+                transition: 0.2s linear;
+                &:hover {
+                    color: rgba($gray, 0.6);
+                }
+            }
+        }
+    }
+    // Info Style
+    .info {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        h1 {
+            color: $white;
+            @extend %title;
+            font-size: 3em;
+        }
+        p {
+            @extend %desc;
+            margin: 40px 0 !important;
+            color: $gray;
+            @include media(min, 992px) {
+                width: 48%;
+            }
+        }
+        a {
+            @include Btn($mainColor, $white);
+        }
+    }
+}
+/* ---------------------
+    End Header
+------------------------ */

@@ -1,0 +1,69 @@
+.sub {
+    @include bgColor($white, $mainColor);
+    position: relative;
+    overflow: hidden;
+    z-index: -1;
+    &::before,
+    &::after {
+        content: "";
+        position: absolute;
+        top: -260px;
+        height: 500px;
+        width: 418px;
+        z-index: 1;
+    }
+    &::before {
+        background: url("../../img/bg/sub-left.svg") no-repeat;
+        @include media(max, 767px) {
+            left: -350px;
+        }
+        @include media(min, 768px) {
+            left: -200px;
+        }
+    }
+    &::after {
+        background: url("../../img/bg/sub-right.svg") no-repeat;
+        @include media(max, 767px) {
+            right: -350px;
+        }
+        @include media(min, 768px) {
+            right: -200px;
+        }
+    }
+    h2 {
+        @extend %title;
+    }
+    p {
+        @extend %desc;
+
+        @include media(min, 767px) {
+            width: 60%;
+        }
+    }
+    form {
+        position: relative;
+        margin: auto;
+        width: 70%;
+        @include media(max, 767px) {
+            width: 100%;
+        }
+        input {
+            border: none;
+            background-color: $gray;
+            padding: 10px 15px;
+            border-radius: 20px;
+            width: 100%;
+        }
+        a {
+            @include Btn($white, $mainColor);
+            position: absolute;
+            right: 0;
+            &:hover {
+                background-color: $white;
+            }
+        }
+    }
+    .icons {
+        @extend %icons;
+    }
+}

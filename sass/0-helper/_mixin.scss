@@ -1,0 +1,44 @@
+// Background Sction & Color
+@mixin bgColor($bgColor, $color) {
+    background-color: $bgColor;
+    color: $color;
+}
+
+//======================================
+
+// Media
+@mixin media($minmax, $width: "(#{$minmax}-width: #{$width})") {
+    @media (#{$minmax}-width: $width) {
+        @content;
+    }
+}
+
+// Example
+// @include media(max, 767px) {
+//     element{Prop}
+// }
+
+//======================================
+
+// Button Hover
+@mixin Btn($color, $bgColor) {
+    @extend %link;
+    color: $color;
+    background-color: $bgColor;
+    &:hover {
+        color: $bgColor;
+        background-color: transparent;
+    }
+}
+
+//======================================
+
+// Animate
+@mixin ainmate($name, $m, $deley) {
+    @if $name == toTop {
+        animation: toTop $m $deley infinite;
+    } @else if $name == toBottom {
+        animation: toBottom $m $deley infinite;
+    }
+}
+//======================================

@@ -1,0 +1,29 @@
+/* ---------------------
+    Start Seller  Style
+------------------------ */
+.seller {
+    position: relative;
+    @include bgColor($mainColor, $white);
+    .title {
+        h2 {
+            @extend %title;
+        }
+        p {
+            @extend %desc;
+            color: $gray;
+            @include media(min, 992px) {
+                width: 50%;
+            }
+        }
+    }
+    img {
+        width: 150px;
+        margin-top: 40px;
+    }
+    .icons {
+        @extend %icons;
+    }
+}
+/* ---------------------
+    End Seller  Style
+------------------------ */

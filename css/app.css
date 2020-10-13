@@ -1,0 +1,463 @@
+html,
+body {
+  scroll-behavior: smooth;
+}
+
+/* ---------------------
+    Header Style
+------------------------ */
+header {
+  position: relative;
+  background: #ff7f7f url("../../img/header/header.png");
+  background-size: cover;
+  min-height: 110vh;
+}
+@media (min-width: 992px) {
+  header {
+    background-attachment: fixed;
+  }
+}
+header nav {
+  background-color: rgba(255, 127, 127, 0.8);
+  box-shadow: 2px 0 2px 0 #e4e4e4;
+}
+@media (max-width: 767px) {
+  header nav {
+    text-align: center;
+  }
+}
+header nav .navbar-toggler {
+  outline: none;
+}
+header nav li a {
+  color: #fff;
+  margin: 0 15px;
+  border-bottom: 1px solid transparent;
+  transition: 0.2s linear;
+}
+header nav li a:hover {
+  color: rgba(228, 228, 228, 0.6);
+}
+header .info {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+header .info h1 {
+  color: #fff;
+  font-size: 3em;
+}
+header .info p {
+  margin: 40px 0 !important;
+  color: #e4e4e4;
+}
+@media (min-width: 992px) {
+  header .info p {
+    width: 48%;
+  }
+}
+header .info a {
+  color: #ff7f7f;
+  background-color: #fff;
+}
+header .info a:hover {
+  color: #fff;
+  background-color: transparent;
+}
+
+/* ---------------------
+    End Header
+------------------------ */
+/* ---------------------
+    Start Seller  Style
+------------------------ */
+.seller {
+  position: relative;
+  background-color: #ff7f7f;
+  color: #fff;
+}
+.seller .title p {
+  color: #e4e4e4;
+}
+@media (min-width: 992px) {
+  .seller .title p {
+    width: 50%;
+  }
+}
+.seller img {
+  width: 150px;
+  margin-top: 40px;
+}
+
+/* ---------------------
+    End Seller  Style
+------------------------ */
+/* ---------------------
+    Tasty Style
+------------------------ */
+.tasty {
+  background-color: #fff;
+  color: #ff7f7f;
+  padding: 100px 0;
+  position: relative;
+}
+@media (max-width: 767px) {
+  .tasty {
+    text-align: center;
+  }
+}
+@media (max-width: 767px) {
+  .tasty .info {
+    margin-top: 30px;
+  }
+}
+.tasty .info a {
+  color: #fff;
+  background-color: #ff7f7f;
+}
+.tasty .info a:hover {
+  color: #ff7f7f;
+  background-color: transparent;
+}
+.tasty::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: url("../../img/bg/static.svg") no-repeat;
+  height: 300px;
+}
+@media (max-width: 992px) {
+  .tasty {
+    padding-bottom: 300px;
+  }
+}
+
+/* ---------------------
+    End Tasty Style
+------------------------ */
+/* ---------------------
+    Stitistics Style
+------------------------ */
+.stitistics {
+  position: relative;
+  background-color: #ff7f7f;
+  color: #fff;
+}
+@media (min-width: 992px) {
+  .stitistics .title p {
+    width: 50%;
+  }
+}
+.stitistics .circle {
+  border: 5px solid #fff;
+  border-radius: 50%;
+  height: 200px;
+  width: 200px;
+  margin-right: auto;
+  margin-left: auto;
+  margin-top: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+/* ---------------------
+    End Stitistics Style
+------------------------ */
+/* ---------------------
+    Start Delicies
+------------------------ */
+.delicies {
+  background-color: #fff;
+  color: #ff7f7f;
+  position: relative;
+}
+@media (max-width: 767px) {
+  .delicies {
+    text-align: center;
+  }
+}
+.delicies .info a {
+  color: #fff;
+  background-color: #ff7f7f;
+}
+.delicies .info a:hover {
+  color: #ff7f7f;
+  background-color: transparent;
+}
+.delicies .icons img:nth-child(3) {
+  bottom: 0;
+  left: 20px;
+  animation: toBottom 1.5s 0.4s infinite;
+}
+
+/* ---------------------
+    Start Delicies
+------------------------ */
+.phoebe {
+  background: linear-gradient(rgba(255, 127, 127, 0.4), rgba(255, 127, 127, 0.9)), url("../../img/pepole/Place Your Image Here (Double Click to Edit).png") fixed;
+  background-size: cover;
+}
+.phoebe .img img {
+  width: 200px;
+  border-radius: 50%;
+}
+.phoebe p {
+  color: #fff;
+}
+@media (min-width: 992px) {
+  .phoebe p {
+    width: 50%;
+  }
+}
+.phoebe h2 {
+  font-weight: bold;
+  color: #fff;
+  letter-spacing: 2px;
+}
+
+.sub {
+  background-color: #fff;
+  color: #ff7f7f;
+  position: relative;
+  overflow: hidden;
+  z-index: -1;
+}
+.sub::before, .sub::after {
+  content: "";
+  position: absolute;
+  top: -260px;
+  height: 500px;
+  width: 418px;
+  z-index: 1;
+}
+.sub::before {
+  background: url("../../img/bg/sub-left.svg") no-repeat;
+}
+@media (max-width: 767px) {
+  .sub::before {
+    left: -350px;
+  }
+}
+@media (min-width: 768px) {
+  .sub::before {
+    left: -200px;
+  }
+}
+.sub::after {
+  background: url("../../img/bg/sub-right.svg") no-repeat;
+}
+@media (max-width: 767px) {
+  .sub::after {
+    right: -350px;
+  }
+}
+@media (min-width: 768px) {
+  .sub::after {
+    right: -200px;
+  }
+}
+@media (min-width: 767px) {
+  .sub p {
+    width: 60%;
+  }
+}
+.sub form {
+  position: relative;
+  margin: auto;
+  width: 70%;
+}
+@media (max-width: 767px) {
+  .sub form {
+    width: 100%;
+  }
+}
+.sub form input {
+  border: none;
+  background-color: #e4e4e4;
+  padding: 10px 15px;
+  border-radius: 20px;
+  width: 100%;
+}
+.sub form a {
+  color: #fff;
+  background-color: #ff7f7f;
+  position: absolute;
+  right: 0;
+}
+.sub form a:hover {
+  color: #ff7f7f;
+  background-color: transparent;
+}
+.sub form a:hover {
+  background-color: #fff;
+}
+
+footer {
+  background-color: #111111;
+  color: #fff;
+  position: relative;
+  margin-top: 300px;
+}
+footer::after {
+  content: "";
+  position: absolute;
+  background: url("../../img/bg/footer.svg");
+  top: -300px;
+  left: 0;
+  right: 0;
+  height: 500px;
+  z-index: -1;
+}
+@media (max-width: 767px) {
+  footer .info {
+    position: relative;
+    top: -100px;
+  }
+}
+footer .info img {
+  width: 100px;
+}
+footer .info p {
+  color: #e4e4e4;
+}
+footer .info .icons-sochil a img {
+  background-color: #fff;
+  padding: 10px;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  display: inline-block;
+  margin: 0 5px;
+}
+footer .info .icons-sochil a:hover {
+  opacity: 0.8;
+  transition: 0.4s linear;
+}
+footer ul {
+  list-style: none;
+  padding: 0;
+}
+@media (max-width: 767px) {
+  footer ul {
+    margin-bottom: 20px;
+  }
+}
+footer ul li {
+  margin-top: 10px;
+}
+footer ul li a {
+  color: #fff;
+}
+footer ul li a:hover {
+  color: #ff7f7f;
+}
+@media (max-width: 767px) {
+  footer {
+    text-align: center;
+  }
+}
+
+/* ---------------------
+    Start Ainmate
+------------------------ */
+@keyframes toTop {
+  0%,
+    100% {
+    top: -100px;
+  }
+  50% {
+    top: 0;
+  }
+}
+@keyframes toBottom {
+  0%,
+    100% {
+    bottom: 100px;
+  }
+  50% {
+    bottom: 50px;
+  }
+}
+/* ---------------------
+    End Ainmate
+------------------------ */
+header .info h1, .seller .title h2, .tasty .info h2, .stitistics .title h2, .delicies .info h2, .sub h2 {
+  text-transform: uppercase;
+  letter-spacing: 4px;
+  font-weight: bold;
+  position: relative;
+  display: inline-block;
+  font-size: 2.5em;
+}
+@media (max-width: 767px) {
+  header .info h1, .seller .title h2, .tasty .info h2, .stitistics .title h2, .delicies .info h2, .sub h2 {
+    font-size: 2em;
+  }
+}
+header .info h1::before, .seller .title h2::before, .tasty .info h2::before, .stitistics .title h2::before, .delicies .info h2::before, .sub h2::before {
+  content: "";
+  position: absolute;
+  height: 4px;
+  width: 40%;
+  background-color: #fff;
+  left: 0;
+  bottom: -10px;
+}
+
+.seller .icons img, .stitistics .icons img, .delicies .icons img, .sub .icons img, footer .icons img {
+  width: 100px;
+  position: absolute;
+  z-index: 2;
+}
+@media (max-width: 767px) {
+  .seller .icons img, .stitistics .icons img, .delicies .icons img, .sub .icons img, footer .icons img {
+    width: 80px;
+  }
+}
+.seller .icons img:nth-child(1), .stitistics .icons img:nth-child(1), .delicies .icons img:nth-child(1), .sub .icons img:nth-child(1), footer .icons img:nth-child(1) {
+  bottom: 40px;
+  right: 50px;
+  animation: toBottom 2s 0.4s infinite;
+}
+@media (max-width: 767px) {
+  .seller .icons img:nth-child(1), .stitistics .icons img:nth-child(1), .delicies .icons img:nth-child(1), .sub .icons img:nth-child(1), footer .icons img:nth-child(1) {
+    right: 20px;
+  }
+}
+.seller .icons img:nth-child(2), .stitistics .icons img:nth-child(2), .delicies .icons img:nth-child(2), .sub .icons img:nth-child(2), footer .icons img:nth-child(2) {
+  top: 40px;
+  left: 50px;
+  animation: toTop 3s 0.4s infinite;
+}
+@media (max-width: 767px) {
+  .seller .icons img:nth-child(2), .stitistics .icons img:nth-child(2), .delicies .icons img:nth-child(2), .sub .icons img:nth-child(2), footer .icons img:nth-child(2) {
+    left: 20px;
+  }
+}
+
+header .info p, .seller .title p, .tasty .info p, .stitistics .title p, .delicies .info p, .phoebe p, .sub p, footer .info p {
+  line-height: 1.8;
+  letter-spacing: 1px;
+  margin: 30px auto;
+}
+
+header .info a, .tasty .info a, .delicies .info a, .sub form a {
+  transition: 0.2s linear;
+  border-radius: 20px;
+  font-weight: bold;
+  padding: 10px 40px;
+  border: 1px solid;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+.delicies {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/*# sourceMappingURL=app.css.map */

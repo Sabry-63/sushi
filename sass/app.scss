@@ -1,0 +1,18 @@
+// Import golbal Variabes
+@import "0-helper/var";
+@import "0-helper/mixin";
+
+// Layouts
+@import "1-beas/beas";
+@import "2-layouts/header";
+@import "2-layouts/seller";
+@import "2-layouts/tasty";
+@import "2-layouts/stitce";
+@import "2-layouts/delicies";
+@import "2-layouts/phoebe";
+@import "2-layouts/subscribe";
+@import "2-layouts/footer";
+
+// Helper
+@import "0-helper/animate";
+@import "0-helper/extand";
